@@ -24,6 +24,9 @@ TARGET_SCREEN_WIDTH := 720
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
+# turn off Dexpre_opt for time being #Revisit after systemspace issue addressed
+WITH_DEXPREOPT := false
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
